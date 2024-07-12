@@ -1,7 +1,8 @@
-import vcardsjs from "vcards-js"
+import vCard from 'vcard'
+import util from 'util'
 
-const testContacts = Bun.file("./inputs/contacts.vcf");
-const testContactsText = await testContacts.text();
+const card = new vCard();
 
-const parsed = parse(testContactsText)
-console.log(parsed)
+card.readFile("inputs/john-doe.vcf", function(err: any, json: any) {
+	console.log(util.inspect(json));
+});
