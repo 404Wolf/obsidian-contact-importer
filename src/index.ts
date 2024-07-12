@@ -1,7 +1,7 @@
-import { parse } from "vcard4"
+import vcardsjs from "vcards-js"
 
-const johnDoeFile = Bun.file("./inputs/john-doe.vcf");
-const johnDoe = await johnDoeFile.text();
+const testContacts = Bun.file("./inputs/contacts.vcf");
+const testContactsText = await testContacts.text();
 
-
-parse(johnDoe)
+const parsed = parse(testContactsText)
+console.log(parsed)

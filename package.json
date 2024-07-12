@@ -4,6 +4,7 @@
   "author": "Wolf Mermelstein",
   "main": "index.js",
   "devDependencies": {
+    "@tapni/vcards-js": "^1.0.9",
     "pnpm": "^9.2.0"
   },
   "description": "Import contacts into templated Obsidian markdown",
@@ -15,6 +16,6 @@
   },
   "dependencies": {
     "@types/bun": "^1.1.6",
-    "vcard4": "^4.0.0"
+    "vcards-js": "^2.10.0"
   }
 }
