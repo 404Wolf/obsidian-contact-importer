@@ -1,21 +1,20 @@
 {
   "name": "obsidian-contact-importer",
   "version": "1.0.0",
-  "description": "Import contacts into templated Obsidian markdown",
+  "author": "Wolf Mermelstein",
   "main": "index.js",
+  "devDependencies": {
+    "pnpm": "^9.2.0"
+  },
+  "description": "Import contacts into templated Obsidian markdown",
+  "license": "MIT",
   "scripts": {
     "build": "bun build.js",
     "start": "bun ./build/index.js",
     "dev": "bun run ./src/index.ts"
   },
-  "author": "Wolf Mermelstein",
-  "license": "MIT",
-  "devDependencies": {
-    "esbuild": "^0.21.4",
-    "pnpm": "^9.2.0",
-    "ts-node": "^10.9.2"
-  },
   "dependencies": {
-    "vcf": "^2.1.2"
+    "@types/bun": "^1.1.6",
+    "vcard4": "^4.0.0"
   }
 }
