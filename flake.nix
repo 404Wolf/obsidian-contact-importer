@@ -13,7 +13,7 @@
       in rec {
         devShells = {
           default = pkgs.mkShell { 
-            packages = [ pkgs.bun ];
+            packages = [ pkgs.bun pkgs.typescript ];
           };
         };
       });

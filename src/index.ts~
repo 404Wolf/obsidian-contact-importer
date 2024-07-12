@@ -1,4 +1,4 @@
-import { vCard } from 'vcard'
+import vCard from 'vcard'
 import util from 'util'
 
 const card = new vCard();
