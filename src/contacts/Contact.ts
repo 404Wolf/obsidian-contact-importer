@@ -1,16 +1,16 @@
 import vcf from "vcf";
 
-interface Phone {
+export interface ContactPhone {
   number: string;
   type: string;
 }
 
-interface Email {
+export interface ContactEmail {
   address: string;
   type: string;
 }
 
-interface Address {
+export interface ContactAddress {
   street: string;
   city: string;
   state: string;
@@ -19,35 +19,34 @@ interface Address {
   label: string;
 }
 
-interface Website {
+export interface ContactWebsite {
   url: string;
   label: string;
 }
 
-interface Name {
+export interface ContactName {
   first: string;
   middle?: string;
   last: string;
   pronunciation?: string;
 }
 
-interface Photo {
+export interface ContactImage {
   data: string;
   type: string;
 }
 
 export type ContactType = {
-  name: Name
+  name: ContactName
   organization?: string;
   title?: string;
-  phones: Phone[];
-  emails: Email[];
-  addresses: Address[];
-  websites: Website[];
+  phones: ContactPhone[];
+  emails: ContactEmail[];
+  addresses: ContactAddress[];
+  websites: ContactWebsite[];
   birthday?: string;
   notes: string;
-  revision: string;
-  location: string;
+  images: ContactImage[];
 }
 
 function objectWithGroupAttribute(obj: any): obj is { group: string } {
@@ -108,12 +107,12 @@ export default class Contact {
           return {
             number: phone[3],
             type: labelMap[phone[1]["group"]]
-          } as Phone
+          } as ContactPhone
         else
           return {
             number: phone[3],
             type: "Misc"
-          } as Phone
+          } as ContactPhone
       })
     }
 
@@ -121,9 +120,9 @@ export default class Contact {
     if (emails !== null) {
       newContact.emails = emails.map(email => {
         if (objectWithGroupAttribute(email[1]))
-          return { type: labelMap[email[1].group] as string, address: email[3] } as Email
+          return { type: labelMap[email[1].group] as string, address: email[3] } as ContactEmail
         else
-          return { type: "Misc", address: email[3] } as Email
+          return { type: "Misc", address: email[3] } as ContactEmail
       })
     }
 
@@ -131,23 +130,33 @@ export default class Contact {
     if (birthday !== null)
       newContact.birthday = birthday[3]
 
-    const photo = getPropertyJSONs("photo")
-    if (photo !== null) {
+    const images = getPropertyJSONs("photo")
+    if (images !== null) {
       let imageType: string;
-      if (typeof photo[1] === "object" && "type" in photo[1])
-        imageType = photo[1].type as string;
+      if (typeof images[1] === "object" && "type" in images[1])
+        imageType = images[1].type as string;
       else
         throw new Error("Unknown image encoding")
-      newContact.photo = {
-        data: photo[3],
+      newContact.images = [{
+        data: images[3],
         type: `image/${imageType}`
-      }
+      } as ContactImage]
     }
 
     const addresses = getPropertyJSONs("adr")
     if (addresses !== null) {
       throw new Error("Not implemented")
     }
+
+    const notes = getPropertyJSONs("note")
+    if (notes !== null)
+      newContact.notes = notes[3]
+    else
+      newContact.notes = ""
+
+    const contactWebsites = getPropertyJSONs("url")
+    if (contactWebsites !== null)
+      newContact.website = contactWebsites[3]
 
     return newContact as ContactType;
   }
