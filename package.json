@@ -10,12 +10,15 @@
   "description": "Import contacts into templated Obsidian markdown",
   "license": "MIT",
   "scripts": {
-    "build": "bun build.js",
-    "start": "bun ./build/index.js",
+    "build": "bun build.ts",
+    "start": "bun ./build/index.ts",
     "dev": "bun run ./src/index.ts"
   },
   "dependencies": {
     "@types/bun": "^1.1.6",
-    "vcard": "^0.1.0"
+    "@types/handlebars": "^4.1.0",
+    "@types/vcf": "^2.0.7",
+    "handlebars": "^4.7.8",
+    "vcf": "^2.1.2"
   }
 }

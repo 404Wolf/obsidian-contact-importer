@@ -1,8 +1,8 @@
-import { vCard } from 'vcard'
-import util from 'util'
+import vcf from "vcf";
+import Contact from "./Contact";
 
-const card = new vCard();
-
-card.readFile("inputs/john-doe.vcf", function(err: any, json: any) {
-	console.log(util.inspect(json));
-});
+const input = Bun.file("./inputs/WolfMermelstein.vcf");
+const cards = vcf.parse(await input.text())
+const contact = cards[0].toJSON()
+//console.log(JSON.stringify(contact))
+console.log(Contact.fromVCard(cards[0]))
