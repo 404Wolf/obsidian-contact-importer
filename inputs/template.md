@@ -1,52 +1,62 @@
+---
+obsidian-contact-importer-schema-version: "1.0"
+tags: ["person"]
+---
+
 # {{name.first}} {{name.last}}
 
-# Contact
+---
 
+{{#if organization}}
+  {{#if title}}
+{{title}} @ {{organization}}
+  {{else}}
+{{organization}}
+  {{/if}}
+{{else}}
+  {{#if title}}
+{{title}}
+  {{/if}}
+{{/if}}
+{{#if image}}
+![Image]({{image}})
+{{/if}}
 ## Phones
+| Type          | Number        |
+|:--------------|:--------------|
 {{#each phones}}
-- **{{type}}**: [{{number}}](tel:{{number}})
+| {{type}}      | `c!{{number}}`|
 {{/each}}
 
 ## Emails
+| Type          | Address       |
+|:--------------|:--------------|
 {{#each emails}}
-- **{{type}}**: [{{address}}](mailto:{{address}})
-{{/each}}
-
-## Addresses
-{{#each addresses}}
-- **{{type}}**: {{address}}
+| {{type}}      | [`c!{{address}}` |
 {{/each}}
 
 ## Links
-{{#each LINKS}}
-- [{{TITLE}}]({{URL}})
+| Type          | URL           |
+|:--------------|:--------------|
+{{#each websites}}
+| {{label}}     | [{{url}}]({{url}}) |
 {{/each}}
 
-# Facts
-
-- **Birthday**: {{birthday}}
-- **Schools**: {{schools}}
-
----
-
-# Status
-
-# {{month}}, {{year}} 
-{{#if organization}}
-- {{title @ organization}}
-{{else}}
-- ???
-{{/if}}
-
----
-
-# Photos/Resources
-
-{{#each images}}
-- ![Image](data:{{type}};base64,{{data}})
+## Addresses
+| Type          | Street        | City, State   | Zip, Country  |
+|:--------------|:--------------|:--------------|:--------------|
+{{#each addresses}}
+| {{type}}      | {{street}}    | {{city}}, {{state}} | {{zip}} {{country}} |
 {{/each}}
 
+## Other
+| Type          | Value         |
+|:--------------|:--------------|
+| Birthday      | {{birthday}}  |
+
 ---
+
+Imported to Obsidian {{imported.month}}, {{imported.day}}, {{imported.year}} 
 
 # Notes
 

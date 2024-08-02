@@ -1,9 +1,24 @@
 import handlebars from "handlebars";
-import type { ContactType } from "../contacts/Contact";
+import type { ContactType } from "../contacts/ContactBuilder";
 import { getFullMonthName } from "./misc";
+import { getB64Hash } from "../utils";
 
-export default function templateMarkdown(contact: ContactType, markdownTemplate: string) {
+export default async function templateMarkdown(
+  contact: ContactType,
+  markdownTemplate: string,
+) {
   const template = handlebars.compile(markdownTemplate);
-  const now = new Date()
-  return template({ ...contact, month: getFullMonthName(new Date()), day: now.getDate(), year: now.getFullYear() })
+  const now = new Date();
+  return template({
+    ...contact,
+    image:
+      contact.image === null
+        ? null
+        : `${(await getB64Hash(contact.image.data)).slice(0, 12)}.${contact.image.type}`,
+    imported: {
+      month: getFullMonthName(new Date()),
+      day: now.getDate(),
+      year: now.getFullYear(),
+    },
+  });
 }

@@ -1,4 +1,5 @@
 import vcf from "vcf";
+import { formatDate } from "../utils";
 
 export interface ContactPhone {
   number: string;
@@ -10,6 +11,16 @@ export interface ContactEmail {
   type: string;
 }
 
+export interface ContactImage {
+  data: string;
+  type: string;
+}
+
+export interface ContactWebsite {
+  url: string;
+  label: string;
+}
+
 export interface ContactAddress {
   street: string;
   city: string;
@@ -19,21 +30,11 @@ export interface ContactAddress {
   label: string;
 }
 
-export interface ContactWebsite {
-  url: string;
-  label: string;
-}
-
 export interface ContactName {
   first: string;
   middle?: string;
   last: string;
   pronunciation?: string;
-}
-
-export interface ContactImage {
-  data: string;
-  type: string;
 }
 
 export type ContactType = {
@@ -46,8 +47,25 @@ export type ContactType = {
   websites: ContactWebsite[];
   birthday?: string;
   notes: string;
-  images: ContactImage;
+  image: ContactImage;
 };
+
+function sanitizeVCardLabel(label: string): string {
+  // Regular expression to match the Apple-specific label format
+  const appleFormatRegex = /\_\$\!<([^>]*)>\!\$_/;
+
+  const match = label.match(appleFormatRegex);
+  if (match) {
+    // Extract the label name from within the Apple-specific format
+    let sanitizedLabel = match[1];
+
+    // Convert to lowercase and replace spaces with underscores
+    sanitizedLabel = sanitizedLabel.replace(/\s+/g, " ");
+    return sanitizedLabel;
+  }
+  // If it doesn't match the Apple-specific format, return the original label
+  return label;
+}
 
 function objectWithGroupAttribute(obj: any): obj is { group: string } {
   return (
@@ -71,12 +89,13 @@ export default class ContactBuilder {
     else return [vCardProperty.toJSON()];
   };
 
-  private extractFullName = (): string => {
+  private extractFullName = (): [string, string] => {
     // [ [ "n", {}, "text", [ "Mermelstein", "Wolf", "", "", "" ] ] ]
     const nameDict = this.getPropertyJSONs("n");
     if (nameDict === null) throw new Error("Contact doesn't have a name!");
-    const name = nameDict[0][3];
-    return `${name[1]} ${name[0]}`;
+    const nameList = nameDict[0][3] as string[];
+    const name = [nameList[1], nameList[0]];
+    return name as [string, string];
   };
 
   private extractPronunciation = (): string => {
@@ -85,7 +104,7 @@ export default class ContactBuilder {
         `xPhonetic${part[0].toUpperCase()}${part.slice(1)}Name`,
       );
       if (pronunciation === null) return null;
-      return pronunciation[0][3];
+      return pronunciation[0][3].trim();
     };
 
     return `${getPronunciationPart("first") || ""} ${getPronunciationPart("last") || ""}`.trim();
@@ -94,13 +113,13 @@ export default class ContactBuilder {
   private extractTitle = (): string => {
     const title = this.getPropertyJSONs("title");
     if (title === null) return "";
-    return title[0] as string;
+    return title[0].trim() as string;
   };
 
   private extractOrganization = (): string => {
     const organization = this.getPropertyJSONs("org");
     if (organization === null) return "";
-    return organization[0] as string;
+    return organization[0].trim() as string;
   };
 
   private extractPhones = (): ContactPhone[] => {
@@ -109,12 +128,12 @@ export default class ContactBuilder {
     return phones.map((phone) => {
       if (objectWithGroupAttribute(phone[1]))
         return {
-          number: phone[3],
-          type: phone[1].group,
+          number: phone[3].trim(),
+          type: phone[1].group.trim(),
         } as ContactPhone;
       else
         return {
-          number: phone[3],
+          number: phone[3].trim(),
           type: "Misc",
         } as ContactPhone;
     });
@@ -126,12 +145,12 @@ export default class ContactBuilder {
     return emails.map((email) => {
       if (objectWithGroupAttribute(email[1]))
         return {
-          address: email[3],
-          type: email[1].group,
+          address: email[3].trim(),
+          type: email[1].group.trim(),
         } as ContactEmail;
       else
         return {
-          address: email[3],
+          address: email[3].trim(),
           type: "Misc",
         } as ContactEmail;
     });
@@ -140,14 +159,16 @@ export default class ContactBuilder {
   private extractBirthday = (): string => {
     const birthday = this.getPropertyJSONs("bday");
     if (birthday === null) return "";
-    return birthday[3] as string;
+    return formatDate(birthday[0][3].trim()) as string;
   };
 
   private extractAddresses = (): ContactAddress[] => {
     const addresses = this.getPropertyJSONs("adr");
     if (addresses === null) return [];
     return addresses.map((address) => {
-      const [street, city, state, zip, country] = address[3];
+      const [_, country, streetZip, city, state] = address[3];
+      const zip = streetZip.split(" ").slice(-1)[0];
+      const street = streetZip.split(" ").slice(0, -1).join(" ");
       return {
         street,
         city,
@@ -166,7 +187,7 @@ export default class ContactBuilder {
     if (images === null) return null;
     const normalizedImages = images.map((image) => {
       return {
-        data: image[3],
+        data: image[3].trim(),
         type: image[1]["type"],
       } as ContactImage;
     });
@@ -177,7 +198,7 @@ export default class ContactBuilder {
   private extractNotes = (): string => {
     const notes = this.getPropertyJSONs("note");
     if (notes === null) return "";
-    return notes[3] as string;
+    return notes[0][3].trim() as string;
   };
 
   private extractWebsites = (): ContactWebsite[] => {
@@ -186,31 +207,53 @@ export default class ContactBuilder {
     return websites.map((website) => {
       if (objectWithGroupAttribute(website[1]))
         return {
-          url: website[3],
-          label: website[1].group,
+          url: website[3].trim(),
+          label: website[1].group.trim(),
         } as ContactWebsite;
       else
         return {
-          url: website[3],
+          url: website[3].trim(),
           label: "Misc",
         } as ContactWebsite;
     });
   };
 
-  private extractAll = (): ContactType => {
-    const [lastName, firstName] = this.extractFullName();
+  private extractAll = (typeFallback: string = "Misc"): ContactType => {
+    const rawLabels = this.getPropertyJSONs("xAbLabel");
+    if (rawLabels === null) throw new Error("Labels not found in VCard");
+    const labelMap = Object.fromEntries(
+      rawLabels.map((label) => [
+        (label[1] as any).group,
+        sanitizeVCardLabel(label[3]).trim(),
+      ]),
+    );
+    const getLabel = (label: string) => {
+      if (label in labelMap) return labelMap[label];
+      else return typeFallback;
+    };
+
+    const [firstName, lastName] = this.extractFullName();
     const pronunciation = this.extractPronunciation();
     const organization = this.extractOrganization();
     const title = this.extractTitle();
-    const phones = this.extractPhones();
-    const emails = this.extractEmails();
+    const phones = this.extractPhones().map(({ number, type }) => ({
+      number,
+      type: getLabel(type),
+    }));
+    const emails = this.extractEmails().map((email: ContactEmail) => ({
+      address: email.address,
+      type: getLabel(email.type),
+    }));
     const birthday = this.extractBirthday();
-    const images = this.extractImages();
+    const image = this.extractImages();
     const addresses = this.extractAddresses();
     const notes = this.extractNotes();
-    const contactWebsites = this.extractWebsites();
+    const websites = this.extractWebsites().map(({ url, label }) => ({
+      url,
+      label: getLabel(label),
+    }));
 
-    return {
+    const outputContact = {
       name: {
         first: firstName,
         last: lastName,
@@ -221,11 +264,13 @@ export default class ContactBuilder {
       phones,
       emails,
       addresses,
-      websites: contactWebsites,
+      websites,
       birthday,
       notes,
-      images,
+      image,
     } as ContactType;
+    console.log("Generated contact!", outputContact);
+    return outputContact;
   };
 
   public static build = (vCard: vcf): ContactType => {

@@ -1,22 +1,24 @@
 import vcf from "vcf";
-import Contact from "./contacts/Contact";
+import ContactBuilder from "./contacts/ContactBuilder";
 import templateMarkdown from "./utils/templating";
-
-async function readFile(path: string): Promise<string> {
-  return await Bun.file(path).text();
-}
-
-async function writeFile(path: string, content: string): Promise<void> {
-  await Bun.write(path, content);
-}
+import { readFile, saveBase64ImageToFile, writeFile } from "./utils";
 
 async function processVCardToMarkdown() {
-  const input = await readFile("./inputs/vcards.vcf");
-  const cards = vcf.parse(input);
-  const contact = Contact.fromVCard(cards[0]);
   const markdownTemplate = await readFile("./inputs/template.md");
-  const result = templateMarkdown(contact, markdownTemplate);
-  await writeFile("./output.md", result);
+  const input = await readFile("./inputs/vcards.vcf");
+  vcf.parse(input).forEach(async (card: vcf) => {
+    const contact = ContactBuilder.build(card);
+    const result = await templateMarkdown(contact, markdownTemplate);
+    await writeFile(
+      `./outputs/contacts/@${contact.name.first} ${contact.name.last}.md`,
+      result,
+    );
+    if (contact.image !== null)
+      await saveBase64ImageToFile(
+        `data:image/${contact.image.type};base64,${contact.image.data}`,
+        `./outputs/resources`,
+      );
+  });
 }
 
-processVCardToMarkdown(); 
+processVCardToMarkdown();
