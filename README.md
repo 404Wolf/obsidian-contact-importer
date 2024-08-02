@@ -1,7 +1,9 @@
 # Obsidian Contact Importer
 ## Import contacts into templated Obsidian markdown
 
-This works by importing your vCards, parsing them with [`vcf`](https://www.npmjs.com/package/vcf), adapting the parser output to be more human-friendly and JSON-ic, and then plugging it all into a handlebar template. Images are handled by converting the base64 embedded images into proper image files, with UUID linking.
+[Obsidian](https://obsidian.md/) is a super cool note taking client. [Vcard](https://www.rfc-editor.org/rfc/rfc6350.html) is a not super cool super annoying Contact storage standard. `Obsidian Contact Importer` is a super cool `ts` project to parse your `vcards`, and generate structured `markdown` ready for importing to `Obsidian`.
+
+This works by loading your vCards, parsing them with [`vcf`](https://www.npmjs.com/package/vcf), adapting the parser output to be more human-friendly and JSON-ic, and then plugging it all into a handlebar template. Images are handled by converting the base64 embedded images into proper image files, with UUID linking.
 
 Currently this is only one-way, but it is designed to be able to be two-way so that you can both convert vCards to markdown and vice versa in the future. Eventually this will be ported to a proper Obsidian plugin.
 
