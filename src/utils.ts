@@ -26,13 +26,14 @@ export async function saveBase64ImageToFile(
 
   // Extract the file extension from the data URL
   const fileExtension = base64Image.match(/^data:image\/(\w+);base64,/)?.[1];
-  if (fileExtension === undefined) throw new Error("Malformed b64");
+  if (fileExtension === undefined || fileExtension === "undefined")
+    throw new Error(`Malformed b64, got "${fileExtension}"`);
 
   // Generate SHA-256 hash of the base64 data
   const hash = await getB64Hash(base64Data);
 
   // Create the filename
-  const filename = `${hash.slice(0, 12)}.${fileExtension}`;
+  const filename = `${hash.slice(0, 16)}.${fileExtension}`;
 
   // Create the full output path
   const outputPath = join(outputFolder, filename);

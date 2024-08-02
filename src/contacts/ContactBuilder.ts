@@ -94,7 +94,7 @@ export default class ContactBuilder {
     const nameDict = this.getPropertyJSONs("n");
     if (nameDict === null) throw new Error("Contact doesn't have a name!");
     const nameList = nameDict[0][3] as string[];
-    const name = [nameList[1], nameList[0]];
+    const name = [nameList[1], nameList[0]].map((name) => name.trim());
     return name as [string, string];
   };
 
@@ -113,13 +113,15 @@ export default class ContactBuilder {
   private extractTitle = (): string => {
     const title = this.getPropertyJSONs("title");
     if (title === null) return "";
-    return title[0].trim() as string;
+    return typeof title[0] === "string" ? (title[0].trim() as string) : "";
   };
 
   private extractOrganization = (): string => {
     const organization = this.getPropertyJSONs("org");
     if (organization === null) return "";
-    return organization[0].trim() as string;
+    return typeof organization[0] === "string"
+      ? (organization[0].trim() as string)
+      : "";
   };
 
   private extractPhones = (): ContactPhone[] => {
@@ -166,6 +168,7 @@ export default class ContactBuilder {
     const addresses = this.getPropertyJSONs("adr");
     if (addresses === null) return [];
     return addresses.map((address) => {
+      const label = address[1];
       const [_, country, streetZip, city, state] = address[3];
       const zip = streetZip.split(" ").slice(-1)[0];
       const street = streetZip.split(" ").slice(0, -1).join(" ");
@@ -175,7 +178,7 @@ export default class ContactBuilder {
         state,
         zip,
         country,
-        label: (address[1] as any).group,
+        label: typeof label === "string" && label.length > 0 ? label : "Misc",
       } as ContactAddress;
     });
   };
@@ -186,10 +189,12 @@ export default class ContactBuilder {
     // "photo" {encoding: string, type: string} "text" "base64"
     if (images === null) return null;
     const normalizedImages = images.map((image) => {
-      return {
+      const contactImage = {
         data: image[3].trim(),
         type: image[1]["type"],
       } as ContactImage;
+      if (contactImage.type === undefined) return null;
+      return contactImage;
     });
     if (normalizedImages.length !== 1) throw new Error("Multiple images found");
     return normalizedImages[0];
@@ -218,18 +223,20 @@ export default class ContactBuilder {
     });
   };
 
-  private extractAll = (typeFallback: string = "Misc"): ContactType => {
+  private extractAll = (labelFallback: string = "Misc"): ContactType => {
     const rawLabels = this.getPropertyJSONs("xAbLabel");
-    if (rawLabels === null) throw new Error("Labels not found in VCard");
-    const labelMap = Object.fromEntries(
-      rawLabels.map((label) => [
-        (label[1] as any).group,
-        sanitizeVCardLabel(label[3]).trim(),
-      ]),
-    );
+    let labelMap = [];
+    if (rawLabels !== null) {
+      labelMap = Object.fromEntries(
+        rawLabels.map((label: any) => [
+          (label[1] as any).group,
+          sanitizeVCardLabel(label[3]).trim(),
+        ]),
+      );
+    }
     const getLabel = (label: string) => {
       if (label in labelMap) return labelMap[label];
-      else return typeFallback;
+      else return labelFallback;
     };
 
     const [firstName, lastName] = this.extractFullName();
@@ -241,7 +248,7 @@ export default class ContactBuilder {
       type: getLabel(type),
     }));
     const emails = this.extractEmails().map((email: ContactEmail) => ({
-      address: email.address,
+      address: email.address.trim(),
       type: getLabel(email.type),
     }));
     const birthday = this.extractBirthday();

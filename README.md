@@ -7,4 +7,4 @@ Currently this is only one-way, but it is designed to be able to be two-way so t
 
 ## Usage
 
-Clone this repo. Run `nix develop` if you have `nix`, or just make sure that `bun` is installed. Then run `bun install`. Export your contacts to a `.vcf` format, and then just run `bun run dev`. This project will be properly packaged soon!
+Clone this repo. Run `nix run github:404wolf/obsidian-contact-importer` if you have `nix`. If not, make sure that `bun` is installed, and then run `bun install`. Export your contacts to a `.vcf` format, and then just run `bun run dev`. This project will be properly packaged soon!

@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "build": "bun build.ts",
-    "start": "bun ./build/index.ts",
+    "start": "bun ./build/index.js",
     "dev": "bun run ./src/index.ts"
   },
   "dependencies": {

@@ -14,7 +14,7 @@ export default async function templateMarkdown(
     image:
       contact.image === null
         ? null
-        : `${(await getB64Hash(contact.image.data)).slice(0, 12)}.${contact.image.type}`,
+        : `${(await getB64Hash(contact.image.data)).slice(0, 16)}.${contact.image.type}`,
     imported: {
       month: getFullMonthName(new Date()),
       day: now.getDate(),

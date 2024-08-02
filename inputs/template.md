@@ -19,6 +19,7 @@ Imported with [Obsidian Markdown Importer](https://github.com/404Wolf/obsidian-c
 {{/if}}
 {{#if image}}
 ![Image]({{image}})
+
 {{/if}}
 ## Phones
 | Type          | Number        |
@@ -33,6 +34,10 @@ Imported with [Obsidian Markdown Importer](https://github.com/404Wolf/obsidian-c
 {{#each emails}}
 | {{type}}      | `c!{{address}}` |
 {{/each}}
+
+## Socials
+| Type          | Handle        |
+|:--------------|:--------------|
 
 ## Links
 | Type          | URL           |
@@ -51,7 +56,9 @@ Imported with [Obsidian Markdown Importer](https://github.com/404Wolf/obsidian-c
 ## Other
 | Type          | Value         |
 |:--------------|:--------------|
+{{#if birthday}}
 | Birthday      | `g!{{birthday}}`  |
+{{/if}}
 | Imported      | {{imported.month}} {{imported.day}}, {{imported.year}} |
 
 ---
