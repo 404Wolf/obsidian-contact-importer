@@ -2,8 +2,7 @@
 obsidian-contact-importer-schema-version: "1.0"
 tags: ["person"]
 ---
-
-# {{name.first}} {{name.last}}
+Imported with [Obsidian Markdown Importer](https://github.com/404Wolf/obsidian-contact-importer)
 
 ---
 
@@ -32,14 +31,14 @@ tags: ["person"]
 | Type          | Address       |
 |:--------------|:--------------|
 {{#each emails}}
-| {{type}}      | [`c!{{address}}` |
+| {{type}}      | `c!{{address}}` |
 {{/each}}
 
 ## Links
 | Type          | URL           |
 |:--------------|:--------------|
 {{#each websites}}
-| {{label}}     | [{{url}}]({{url}}) |
+| {{label}}     | `g!{{url}}` |
 {{/each}}
 
 ## Addresses
@@ -52,12 +51,10 @@ tags: ["person"]
 ## Other
 | Type          | Value         |
 |:--------------|:--------------|
-| Birthday      | {{birthday}}  |
+| Birthday      | `g!{{birthday}}`  |
+| Imported      | {{imported.month}} {{imported.day}}, {{imported.year}} |
 
 ---
 
-Imported to Obsidian {{imported.month}}, {{imported.day}}, {{imported.year}} 
-
-# Notes
-
 {{notes}}
+
