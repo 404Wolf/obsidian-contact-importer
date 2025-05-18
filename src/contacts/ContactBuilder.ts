@@ -84,15 +84,17 @@ export default class ContactBuilder {
   private getPropertyJSONs = (property: string): any[] | null => {
     const vCardProperty = this.vCard.get(property);
     if (vCardProperty === undefined) return null;
-    if (Array.isArray(vCardProperty))
+    if (Array.isArray(vCardProperty)) {
       return vCardProperty.map((vCard) => vCard.toJSON());
-    else return [vCardProperty.toJSON()];
+    } else return [vCardProperty.toJSON()];
   };
 
   private extractFullName = (): [string, string] => {
     // [ [ "n", {}, "text", [ "Mermelstein", "Wolf", "", "", "" ] ] ]
     const nameDict = this.getPropertyJSONs("n");
-    if (nameDict === null) throw new Error("Contact doesn't have a name!");
+    if (nameDict === null) {
+      return [`no_name_${crypto.randomUUID().slice(2)}`, ""];
+    }
     const nameList = nameDict[0][3] as string[];
     const name = [nameList[1], nameList[0]].map((name) => name.trim());
     return name as [string, string];
@@ -107,7 +109,9 @@ export default class ContactBuilder {
       return pronunciation[0][3].trim();
     };
 
-    return `${getPronunciationPart("first") || ""} ${getPronunciationPart("last") || ""}`.trim();
+    return `${getPronunciationPart("first") || ""} ${
+      getPronunciationPart("last") || ""
+    }`.trim();
   };
 
   private extractTitle = (): string => {
@@ -128,16 +132,17 @@ export default class ContactBuilder {
     const phones = this.getPropertyJSONs("tel");
     if (phones === null) return [];
     return phones.map((phone) => {
-      if (objectWithGroupAttribute(phone[1]))
+      if (objectWithGroupAttribute(phone[1])) {
         return {
           number: phone[3].trim(),
           type: phone[1].group.trim(),
         } as ContactPhone;
-      else
+      } else {
         return {
           number: phone[3].trim(),
           type: "Misc",
         } as ContactPhone;
+      }
     });
   };
 
@@ -145,16 +150,17 @@ export default class ContactBuilder {
     const emails = this.getPropertyJSONs("email");
     if (emails === null) return [];
     return emails.map((email) => {
-      if (objectWithGroupAttribute(email[1]))
+      if (objectWithGroupAttribute(email[1])) {
         return {
           address: email[3].trim(),
           type: email[1].group.trim(),
         } as ContactEmail;
-      else
+      } else {
         return {
           address: email[3].trim(),
           type: "Misc",
         } as ContactEmail;
+      }
     });
   };
 
@@ -210,16 +216,17 @@ export default class ContactBuilder {
     const websites = this.getPropertyJSONs("url");
     if (websites === null) return [];
     return websites.map((website) => {
-      if (objectWithGroupAttribute(website[1]))
+      if (objectWithGroupAttribute(website[1])) {
         return {
           url: website[3].trim(),
           label: website[1].group.trim(),
         } as ContactWebsite;
-      else
+      } else {
         return {
           url: website[3].trim(),
           label: "Misc",
         } as ContactWebsite;
+      }
     });
   };
 
@@ -276,7 +283,6 @@ export default class ContactBuilder {
       notes,
       image,
     } as ContactType;
-    console.log("Generated contact!", outputContact);
     return outputContact;
   };
 

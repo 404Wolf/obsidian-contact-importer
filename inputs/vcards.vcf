@@ -1,125 +1,800 @@
 BEGIN:VCARD
 VERSION:3.0
-PRODID:-//Apple Inc.//iPhone OS 17.5.1//EN
-N:Mermelstein;Wolf;;;
+FN:Aaditya Natarajan
+N:Natarajan;Aaditya;;;
+item1.EMAIL;TYPE=INTERNET:aan88@case.edu
+item1.X-ABLabel:University
+item2.EMAIL;TYPE=INTERNET:nataraad000@isd284.com
+item2.X-ABLabel:High School
+TEL;TYPE=CELL:‪(224) 256-8762
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:AJ Williams
+N:Williams;AJ;;;
+TEL;TYPE=CELL:(805) 603-8838
+ORG:CWRU
+CATEGORIES:Imported on 2/20,myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Amanda Afranquinha
+N:Afranquinha;Amanda;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:afranquinha@gmail.com
+EMAIL;TYPE=INTERNET;TYPE=WORK:afranqniuha@taots.org
+item1.URL:http\://www.google.com/profiles/100727357530124375672
+item1.X-ABLabel:PROFILE
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1y-m-SOXZDaGJy
+ gRE29tFJa2-F6SBeSQRjrZD5vjnRRfX_shKRy
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEC_7-pIzpVYxfJ5G6b9L
+ onosCvlP27_N4-ezLTua5pcAVfa-Rk
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Amit
+N:;Amit;;;
+TEL;TYPE=CELL:+972 54-927-7766
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1w7LslTavDdIKk
+ NlpSW90OI87EmsIjl_DbJzG-hZLlXJtXmbSAr
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEHKxltaaAjYvKP1tQh3p
+ kgGVdBSK98Zht_vy5pO7bQnrPNeZtL
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Arnik Shah
+N:Shah;Arnik;;;
+item1.TEL:646-322-1752
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Aryeh
+N:;Aryeh;;;
+TEL;TYPE=CELL:(917) 589-1591
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHPJ68_h45wfBN-JpyxMC
+ cmXcrDvVl8AFM58UpzLZfvIITnuluu
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Christopher Richner
+N:Richner;Christopher;;;
+item1.EMAIL;TYPE=INTERNET:ctr37@case.edu
+item1.X-ABLabel:
+item2.TEL:‪(614) 943-9091
+item2.X-ABLabel:
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Crystalyn Kae
+N:Kae;Crystalyn;;;
+TEL;TYPE=CELL:+1 206-850-2782
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1w1oK7LI6G-7a-
+ YjV8PtxMz4VKk0Hd3E0OXJj5kSsWieOay-OVk
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEcFkSEiE9XWXl8D-n7zi
+ 6NFi4w7Lz5otB4DeKuPWeFuQvl0Vjr
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:CWRU Emergency
+N:;CWRU Emergency;;;
+TEL;TYPE=CELL:(216) 368-3333
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:CWRU Non Emergency
+N:;CWRU Non Emergency ;;;
+TEL;TYPE=CELL:(216) 368-3300
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:CWRU Safe Ride
+N:;CWRU Safe Ride;;;
+TEL;TYPE=CELL:(216) 368-3000
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:David
+N:;David;;;
+TEL;TYPE=CELL:+1 206-817-4247
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1x1MOFlV5nejWi
+ caOhaWymPfLmCE8rMijXdwl-ldt9xbz-dy2PH
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHTS6foZMfX91hbVu3cC7
+ gtdJQHKi_YKJOwx7r6yYg9HxiMfQes
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Emreet
+N:;Emreet;;;
+TEL;TYPE=CELL:+972 50-575-3006
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xyOhU61bfb5m8
+ mh_hzjHkL4OqTZEM6mwalBumpITH1IojG5gC9
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFHO3KcASY64UYWBiqLjR
+ bLQy9cH_0lP0_5gwStsoLBRJBUb3n7
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Eri
+N:;Eri;;;
+TEL;TYPE=CELL:(917) 680-0251
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFwTaIuvjlP36X8XiXpVW
+ cnRI-fFugMcZOBRUlcU0k02YS7fhx9
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Felix
+N:;Felix;;;
+TEL;TYPE=CELL:(646) 975-1795
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGOOpq0E4TkVUNnnS_slT
+ nHj_jkA5iYC9PklJomXMkuK-j3RMNg
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Flo Bender
+N:Bender;Flo;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:bubbebndr@sbcglobal.net
+EMAIL;TYPE=INTERNET;TYPE=HOME:florinebendermarks1@gmail.com
+EMAIL;TYPE=INTERNET:Florinebendermarks1@gmail.com
+TEL:+18474946475
+item1.TEL:(847) 966-6475
+item1.X-ABLabel:Landline
+ADR;TYPE=HOME:;;5336 Arcadia St.;Skokie;Il;60077;;5336 Arcadia St.\nSkokie
+ \, Il 60077
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xUzNbHSdj67jB
+ IBUKiSHAFcSFkd6iU2hQLlxs-K6d9YOkQxD-c
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGAmr49JYqcOpNLDbyoco
+ WaEVMjCveJy3TNH7GLXW7iCWiLb0yz
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Gita Gotisman
+N:Gotisman;Gita;;;
+TEL;TYPE=HOME:(732) 745-2444
+TEL;TYPE=CELL:(862) 266-2391
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zYkGpCP1o2e4-
+ LO8vhlYE2m6yI8ESIWHwL7G1OwLEba17Sr1Ak
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEEdphxNX8korDIUvqalv
+ Xc4gSsG6vj1BNDhjuO5OZsR4NOjaWC
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Hannah Bender
+N:Bender;Hannah;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:roseflower1995@hotmail.com
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zf5w2qg4i_jsN
+ SuSviYNPFfwG1DgU_Oba65_DL9u2pRC2T0si8
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFe95xqfvi54_zkuqCNGL
+ LYR9SCfpNbrmegVkA4ZsUYc1_LdDhL
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Harry
+N:;Harry;;;
+TEL;TYPE=CELL:+1 917-946-4951
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1ymXyg7tVR-WUD
+ zlsBQMiNcC-hQKPewp5P0ZqBFShsUXeDp43v_
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEuaL03nlT80N_EnBP1qF
+ 9AV5flTTE7s7GRj557NMXan99074Gt
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Helene Rosenbamb
+N:Rosenbamb;Helene;;;
+TEL;TYPE=CELL:+1 (516) 946-0222
+TEL;TYPE=CELL:(732) 718-2222
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1wDBH7BqtpyQpu
+ ojdQ58vjb1mGZGjTLnBf5BL69_nM0tnA-OiX0
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGk1QfV4Ksgw-0QhK4EnL
+ lUxsyPCdZLXsktE_5XwqhG29wS4Z7g
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Henry Gura
+N:Gura;Henry;;;
+TEL;TYPE=CELL:(718) 873-7554
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zylltMggDUrTh
+ fHhDW9Wl0jFCdGtBU1SuGBBs5aavb_bbok7JS
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHYEYcqaXYAV3oZkzTBDQ
+ 66ArmNY6gcyaTXdesVjH6nE0L10n4R
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Howard Bender
+N:Bender;Howard;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:exxchef@hotmail.com
+EMAIL;TYPE=INTERNET;TYPE=WORK:exxchef@gmail.com
+EMAIL;TYPE=INTERNET;TYPE=HOME:howard@schmacon.com
+TEL;TYPE=HOME:815-505-4069
+TEL;TYPE=HOME:331-330-2203\;3
+item1.URL:http\://www.google.com/profiles/109117082483328807233
+item1.X-ABLabel:PROFILE
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1yrtPAIVzZddUe
+ n0yCL-jSGvyqBqaMUuHrZpiiB2oYzmoEwt3dx
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzH6aJcEtHoTOBYS5ytYEa
+ 9uEYjj5UEHBtHR1A542cHA0Q75pVOA
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Ian Fisher
+N:Fisher;Ian;;;
+item1.TEL:+11571419176
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Ian Fisher
+N:Fisher;Ian;;;
+item1.TEL: 571-419-176
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Idan
+N:;Idan;;;
+TEL;TYPE=CELL:+972 50-621-5549
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFfWDWnNjI5GwuhCBvUpP
+ eaTdptoNKLEjdK-XOVlpGz0rBr14XD
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jack Boen
+N:Boen;Jack ;;;
+TEL:(917) 586-2021
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zYA5EEBpUXnXr
+ VrdVkfiNhd6XKUziI7k6EHUn20R7dckak6DC5
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHn3-XaCqQ5DWFTPMkBeI
+ usVw5hkRhLL5Xx0sbQamMEaV9ay5N8
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jacob Bender
+N:Bender;Jacob;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:jayjayb100@msn.com
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1w03g5sDIxNJv7
+ nni9k42WJzI6L6i3oiS-QAqXxl9okPpgvv_Dr
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGdOV66wYlT08bkIY5Qh6
+ -oULTIscqF1CNkv8VJD1VIQjUXGphg
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jay
+N:;Jay;;;
+TEL;TYPE=CELL:(347) 768-1996
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xEEEdOSClGSge
+ FYFU_TYcp7A3x65om22nxkiAfpyt5BwxFV1Ue
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGGVurQVG2OVoDx28LAIh
+ xgdmRsI6z4wR1b7iL2qm0_eNhZuvlL
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jeffrey Mermelstein
+N:Mermelstein;Jeffrey;;;
+EMAIL;TYPE=INTERNET:jeffmermelstein1@gmail.com
+EMAIL;TYPE=INTERNET:mermelstein@eathlink.com
+EMAIL;TYPE=INTERNET:mermelstein@earthlink.net
+TEL;TYPE=HOME:(917) 974-4212
+ADR;TYPE=HOME:;;338 22nd St\nBrooklyn;;NY;11215;;338 22nd St\nBrooklyn\nNY 
+ 11215
+item1.X-ABRELATEDNAMES:Dad
+item1.X-ABLabel:_$!<Father>!$_
+item2.X-ABRELATEDNAMES:Daddy
+item2.X-ABLabel:_$!<Father>!$_
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xUISQcCmzQL3d
+ QmQQWqsrTgDbLN4D_fZqE1MwWWHKU5iY0B1sd
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFDLCyS77JvYKxdn0V48B
+ n9ZJStfYv_BP-FbktEoVe1zBNdCu-7
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jenna
+N:;Jenna;;;
+TEL;TYPE=CELL:(646) 830-1916
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1yLkBv8cK9Ev4S
+ XMD1eNpV1aUgJxlRke-WM6KeJMdEfUPvmcLWq
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHmohCJ_l4r9UgRf6zh74
+ KReaTgA4kr9K6Q2UOjqByyJZnNpo32
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jon Samson
+N:Samson;Jon;;;
+EMAIL;TYPE=INTERNET:cocreativemusic@gmail.com
+item1.URL:http\://www.google.com/profiles/112283480090638469423
+item1.X-ABLabel:PROFILE
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xJbJebdYQadw0
+ uZk7QI1m_gtrut1pjxksFnpSNq4dLyC57Y4JO
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFDugyDLEkotGveDbv_UR
+ NZCiE0rT-jOz2QMcwb7F00yyZJT0NV
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jonah Reinis
+N:Reinis;Jonah;;;
+item1.TEL:+13107021508
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jonah Reinis
+N:Reinis;Jonah;;;
+item1.TEL:+13107021508
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Joseph Martinez
+N:Martinez;Joseph;;;
+item1.TEL:+16024590984
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Joseph Martinez
+N:Martinez;Joseph;;;
+item1.TEL:+16024590984
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Juniper RA
+N:;Juniper RA;;;
+TEL;TYPE=CELL:(216) 496-7550
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Jupiter Ed
+N:;Jupiter Ed;;;
+TEL;TYPE=CELL:263-96
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzE8O5f2YY2Pir4xfBTAuN
+ LAHrv63AuTPGjRwBqTgN1A2nfD6YM5
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Kaleb Kim
+N:Kim;Kaleb;;;
+item1.TEL:+14086854116
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Kathie Bender
+N:Bender;Kathie;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:kpaxid@hotmail.com
+TEL;TYPE=CELL:(815) 603-1031
+item1.URL:http\://www.google.com/profiles/104403811497935403631
+item1.X-ABLabel:PROFILE
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zhwIaXkDcAnLV
+ BUHlY0b11C5SgHopJmYBr_VjPVFGWPMnrSAj9
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzH5sykJarMLI1VIDLHxuV
+ bXjWMkCWoAiKQvCOMJN7UYGqYxDKgN
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Lily Kagy
+N:Kagy;Lily ;;;
+item1.EMAIL;TYPE=INTERNET:lrk56@case.edu
+item1.X-ABLabel:
+item2.TEL:‪(309) 453-3323
+item2.X-ABLabel:
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Lisa Bender
+N:Bender;Lisa;;;
+EMAIL;TYPE=INTERNET:leebasue@yahoo.com
+EMAIL;TYPE=INTERNET:lisasuebender@gmail.com
+TEL;TYPE=CELL:(917) 670-1591
+BDAY:19650528
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zsU17JbUpMZUG
+ Ht3KtUNlvp_3cmLzJI_Sn-YG26LND_xmjtBee
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHatI4XFnWssgp2bXJZ7X
+ FEhr4zccdpGUe2igyx5Q1BwbHQ_j6n
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Liz
+N:;Liz;;;
+TEL;TYPE=CELL:+1 917-692-0336
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHY-mPQe823MHKm7NlQKx
+ z62IOviioy726hJQ0egBvTd8ca83PC
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Marc Mermelstein
+N:Mermelstein;Marc;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:marcmer@optonline.net
+TEL;TYPE=CELL:1 (732) 754-0814
+TEL:(732) 514-1990
+ADR;TYPE=HOME:;;30 S Adelaide Ave 7D;Highland Park;NJ;08904;;30 S Adelaide 
+ Ave 7D\nHighland Park\, NJ 08904
+item1.X-ABRELATEDNAMES:Uncle Mendel
+item1.X-ABLabel:Uncle
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1z_V0Gz-KK_8Dg
+ NTJDykhlOeYldDSPLgoegA0wFtl43PzB0JOMG
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHsQG-VHau2qta8ImcNFH
+ AZndX6aPwsMFVGHX6ae7u0HGliCqOy
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Maret
+N:;Maret;;;
+TEL;TYPE=CELL:(646) 830-0157
+BDAY:20040327
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGDOH800sy3GICn7IFzUV
+ pZQejob1vhJoU8Q3PLTsQQ2I-quBV-
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Nat K
+N:K;Nat;;;
+TEL;TYPE=CELL:+1 (646) 937-3034
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFSaUKk8TeiF3JhmD7KX6
+ bF3pKCWxRu-OgVq4Lvj2oZNdKOqlDv
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Natalie Kricofsky
+N:Kricofsky;Natalie;;;
+item1.EMAIL;TYPE=INTERNET:trinitrotoluene64@gmail.com
+item1.X-ABLabel:
+item2.URL:http\://www.google.com/profiles/110404607483484571596
+item2.X-ABLabel:PROFILE
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzG3_IW44W2n3YTXcj-_fj
+ 7AWtwpW4azAgVI8rzcCG5CPi8EwDym
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Nats
+N:;Nats ;;;
+TEL;TYPE=CELL:+1 (917) 364-3619
+ORG:Mom
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEBQb6FCJdn_oZqSJezE6
+ Pmze4KefPkOxitKJH01RTlXfHI5yPw
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Nicholas Cai
+N:Cai;Nicholas;;;
+EMAIL;TYPE=INTERNET:nicholascai1204@gmail.com
+TEL;TYPE=HOME:(917) 892-5811
+item1.URL:http\://www.google.com/profiles/109553751934221713969
+item1.X-ABLabel:PROFILE
+item2.X-ABRELATEDNAMES:Nic
+item2.X-ABLabel:_$!<Friend>!$_
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1xuDnH8DNv7tKe
+ IMYQqYQcTqaY69DCqgA9T37ufdD_yMuNXv-aM
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzG_04UbeOO-RIvSb_Vnlm
+ iSbJN-VCcR2aUiVjF-WUDAkvocNklj
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Nicole Costanzo
+N:Costanzo;Nicole;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:ncostanzo@taots.org
+EMAIL;TYPE=INTERNET:costan83@gmail.com
+ORG:Teaching (art)
+item1.URL:http\://www.google.com/profiles/108065548223779385162
+item1.X-ABLabel:PROFILE
+item2.URL:http\://www.google.com/profiles/102858105889704575925
+item2.X-ABLabel:PROFILE
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1w-SIDWyuINezz
+ ffcUaqLWNHyQSwO0XDa-8fUOMlSCXfffTmLSz
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzH71rZH-5k87SHNFDbShd
+ WAmR_rCxteOrR0GGE-gtr0GahKIKgZ
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Noah Schrader
+N:Schrader;Noah;;;
+TEL;TYPE=CELL:+1 347-703-4334
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHVmytx9ThbycItQ5ZUq8
+ 0rUqpOFGuaYUP7utis-Z4UY83--s5p
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Owen
+N:;Owen;;;
+TEL;TYPE=CELL:+1 646-852-4306
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHNgBRNc7P4pc2fNbx-LZ
+ fo_DXgP_HIUUrldjUwhHQ-naReApAv
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Patty
+N:;Patty;;;
+TEL;TYPE=CELL:(347) 661-5956
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzG7JpArarGG9IwLkm32E7
+ lbVHd6Dzlx9BxSWzC7PP9QHebJ129c
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:RA On Call
+N:;RA On Call;;;
+TEL;TYPE=CELL:(216) 496-7550
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Regina Mermelstein
+N:Mermelstein;Regina;;;
+item1.EMAIL;TYPE=INTERNET:bubbie1928@icloud.com
+item1.X-ABLabel:iCloud
+TEL;TYPE=HOME:(732) 754-5557
+TEL;TYPE=CELL:(732) 754-5557
+ADR;TYPE=HOME:;;Bubbie1928@icloud.com\n9 Elbert Court;Highland Park;NJ;0890
+ 4;;Bubbie1928@icloud.com\n9 Elbert Court\nHighland Park\, NJ 08904
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1zcsOrHiDwcc9l
+ xVzVSKXQpQLbJ9AWOo4VV31XIPqrW8hcohOa-
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFfXna99PvKNgBsO-gwKT
+ 5iAxh-NrHqpcwipUg3Rvv4UBgImklp
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Robin Wohl
+N:Wohl;Robin;;;
+item1.EMAIL;TYPE=INTERNET:rwohl@taots.org
+item1.X-ABLabel:
+ORG:T.A.O.T.S (school)
+item2.URL:www.taots.com
+item2.X-ABLabel:_$!<HomePage>!$_
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGgCoeaBo2exkQujL3kbb
+ vN4bip2ybnP2dL998M4DWlSytHBRwp
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Ryan
+N:;Ryan;;;
+TEL;TYPE=CELL:+1 347-703-8020
+NOTE:Photo: https\://lh3.googleusercontent.com/contacts/ADUEL1z1IErVk8rZFYz
+ MgWbDob977u05xiRk2ewkDB_6tW4MHqawTbK7
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFkHml35Azn-v-AuNpCdO
+ oWgvuLdSkOWkT6sgTag-X0Az49C2nf
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Sam Cavallero
+N:Cavallero;Sam ;;;
+TEL;TYPE=CELL:215-292-1106
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzEx107pDuyZlb_vPL5WVL
+ xDRXZ26auCeCMpj6rM2wYyxXSqcICS
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Seth
+N:;Seth;;;
+ADR;TYPE=HOME:;;14 willowdale drive;cherry hill;NJ;08003;;14 willowdale dri
+ ve\ncherry hill\, Nj 08003
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHwdiVCZOpv7Vz9lCfDYP
+ GNJpj9_kInqg0N9KJoPw9yap9e89lI
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Shahen
+N:;Shahen;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:a.shahinoor321@gmail.com
+TEL;TYPE=CELL:+1 (646) 331-3527
+ADR;TYPE=HOME:;Woodside;44th Ave;NY;NY;11377;;44th Ave\nWoodside\, NY\, NY 
+ 11377
+BDAY:--0915
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHDUJSznE7qm0oYm7-m2y
+ 4DW0nw9QiRCibnqF6BGQvn0qBqhFME
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Simon
+N:;Simon;;;
+TEL;TYPE=CELL:‪(857) 636-1541‬
+ORG:Case Western Reserve University
+TITLE:Student
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Simon Gura
+N:Gura;Simon;;;
+TEL;TYPE=CELL:(718) 208-5720
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGVbI4Yx6VkhoTxQCIomN
+ Wf5638Mu_IAnERQ35uOrHuc6VwJdIj
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Sipi
+N:;Sipi;;;
+TEL;TYPE=CELL:+972 52-673-2503
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzE6yc4XtCSDXfHgQBrQHd
+ ZX47C9fGKFmCnA4v6YoKuBFDOwhcho
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Soren
+N:;Soren;;;
+TEL;TYPE=CELL:+1 917-392-6351
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGCmwgt4TQPo06_Sz8ZUm
+ x2CBTwA8Y5I-sU-Fu1TDad7ExHmt2A
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Stacy Butsikares
+N:Butsikares;Stacy;;;
+item1.EMAIL;TYPE=INTERNET:sjbutsikares@yahoo.com
+item1.X-ABLabel:
+EMAIL;TYPE=INTERNET:sbutsikares@taots.org
+item2.URL:http\://www.google.com/profiles/106993654764133992211
+item2.X-ABLabel:PROFILE
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFLiEftCdiJpIKHTCA1LO
+ oBWlVxb3jm20foFGfkEcPkJm1QL1Kh
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Suquoa
+N:;Suquoa;;;
+TEL:+16463151792
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGCQ9uGorhDnp7CbwFVB-
+ nYpW6ZXjHuolVNsgAkBxHw1NpckoCz
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Tina Esposito
+N:Esposito;Tina;;;
+EMAIL;TYPE=INTERNET:tesposito@taots.org
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzF7RQ7ZF-0FaiHrEFv1aR
+ 2md0NZh-IgqHETY-zs6BsVoYP8u7ni
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Tobias
+N:;Tobias;;;
+TEL:+1 646-951-0304
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Ulisse
+N:;Ulisse;;;
+TEL;TYPE=HOME:347-661-5534
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHaYCQD6mn089LWQ4AzOk
+ klfk3AYOUp_uSW7RPQqBuyQmCKMOPW
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Viveka Rabara
+N:Rabara;Viveka;;;
+item1.EMAIL;TYPE=INTERNET:vvr13@case.edu
+item1.X-ABLabel:
+item2.TEL:(216) 695-8628‬
+item2.X-ABLabel:
+ORG:CWRU
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Walker
+N:;Walker;;;
+TEL;TYPE=CELL:(917) 620-1166
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFk6-7NkE-J_X34mw7FXz
+ 23qF2uCd9rMFg6gx7pNnj_BczwvnbY
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:William Sherman
+N:Sherman;William;;;
+item1.EMAIL;TYPE=INTERNET:wsherman@bhsec.bard.edu
+item1.X-ABLabel:
+item2.TEL:646-265-3273
+item2.X-ABLabel:
+NOTE:Physics Professor
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzFRopi0YRfuiXCbVz6HbM
+ aREVqkNcjPYNenTW86NjYyTnrVPDe_
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+item1.EMAIL;TYPE=INTERNET:wm@case.edu
+item1.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
 FN:Wolf Mermelstein
-X-PHONETIC-FIRST-NAME:Wolf
-EMAIL;type=INTERNET;type=pref:wsm32@case.edu
-item1.EMAIL;type=INTERNET:wolf.mermelstein@case.edu
-item1.X-ABLabel:University Alt
-item2.EMAIL;type=INTERNET:wsm32@cwru.edu
-item2.X-ABLabel:University
-EMAIL;type=INTERNET:uptothebird@gmail.com
-item3.X-ABLabel:Primary
-item5.TEL;type=pref:(917) XXX-7875
+N:Mermelstein;Wolf;;;
+NICKNAME:Wolves
+item1.EMAIL;TYPE=INTERNET:wmermelstein2019@ms447.org
+item1.X-ABLabel:Middle School
+item2.EMAIL;TYPE=INTERNET:wolfmermelstein@yahoo.com
+item2.X-ABLabel:Primary
+EMAIL;TYPE=INTERNET;TYPE=HOME:twilak.isfeld@gmail.com
+EMAIL;TYPE=INTERNET:uptothebird@gmail.com
+item3.EMAIL;TYPE=INTERNET:wsm32@cwru.edu
+item3.X-ABLabel:University
+item4.EMAIL;TYPE=INTERNET:wolf.mermelstein@case.edu
+item4.X-ABLabel:University Alt
+TEL;TYPE=CELL:(929) 265-7180
+item5.TEL:(917) 246-7875
 item5.X-ABLabel:Backup
-TEL;type=CELL;type=VOICE:(929) XXX-7180
-NOTE:This is me.
-item6.URL;type=pref:https://404wolf.com
+BDAY:20040812
+item6.URL:https\://404wolf.com
 item6.X-ABLabel:_$!<HomePage>!$_
-BDAY:XXXX-REDACTED-08
-PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAA
- AAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAZKADAAQAAAABAA
- AAZAAAAAD/wAARCABkAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcI
- CQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0f
- AkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4
- eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2u
- Hi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QA
- tREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRCh
- YkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
- hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5e
- bn6Onq8vP09fb3+Pn6/9sAQwACAgICAgIDAgIDBQMDAwUGBQUFBQYIBgYGBgYICggICAgICAoK
- CgoKCgoKDAwMDAwMDg4ODg4PDw8PDw8PDw8P/9sAQwECAgIEBAQHBAQHEAsJCxAQEBAQEBAQEB
- AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/90ABAAH/9oADAMBAAIR
- AxEAPwDn9C0T7h8uvXtH0L/pnUegaP8Ac/d17Fo2j/8ATOu6VQ82JR0rQfufu67iz0T/AKZ10G
- naZXXW1hBBXNOZaOZttC/6Z1X15tK8P6U+o6nPHbQp99m/+tmvnv4q/tX+HPDGq3Xg34fJB4h1
- uFW82RZvLtoJOcI0qLJliVI4U44wG5x8T/Gyf4qeLdVg1bxdrun+G0ubZfKsdcvrewR/us3lwX
- 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
- ryrwZ/x76n/1/S/+gpXY19Bc8RrU/9k=
+item7.URL:great
+item7.X-ABLabel:Foobar
+item8.X-ABRELATEDNAMES:Lisa Bender
+item8.X-ABLabel:_$!<Mother>!$_
+item9.X-ABRELATEDNAMES:Jeff Mermelstein
+item9.X-ABLabel:_$!<Father>!$_
+item10.X-ABRELATEDNAMES:Me
+item10.X-ABLabel:Other
+NOTE:This is me.\nPhoto: https\://lh3.googleusercontent.com/contacts/ADUEL1
+ ybnCDqVY8liU5CUOnddUWYwrDp6tfgRPcaJNW_5G59wU-MbiC6
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzHDoSivsGq-rUcDTGR2qq
+ _ZxyX__MX-XnIaHjrxIkGxIhSj7-id
+CATEGORIES:myContacts
 END:VCARD
