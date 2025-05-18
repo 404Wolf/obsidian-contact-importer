@@ -14,6 +14,7 @@ export interface ContactEmail {
 export interface ContactImage {
   data: string;
   type: string;
+  path?: string;
 }
 
 export interface ContactWebsite {
@@ -199,7 +200,7 @@ export default class ContactBuilder {
         data: image[3].trim(),
         type: image[1]["type"],
       } as ContactImage;
-      if (contactImage.type === undefined) return null;
+      // if (contactImage.type === undefined) return null;
       return contactImage;
     });
     if (normalizedImages.length !== 1) throw new Error("Multiple images found");

@@ -1,7 +1,6 @@
 import handlebars from "handlebars";
 import type { ContactType } from "../contacts/ContactBuilder";
 import { getFullMonthName } from "./misc";
-import { getB64Hash } from "../utils";
 
 export default async function templateMarkdown(
   contact: ContactType,
@@ -11,10 +10,9 @@ export default async function templateMarkdown(
   const now = new Date();
   return template({
     ...contact,
-    image:
-      contact.image === null
-        ? null
-        : `${(await getB64Hash(contact.image.data)).slice(0, 16)}.${contact.image.type}`,
+    image: contact.image === null || (!contact.image.path)
+      ? null
+      : contact.image.path,
     imported: {
       month: getFullMonthName(new Date()),
       day: now.getDate(),
